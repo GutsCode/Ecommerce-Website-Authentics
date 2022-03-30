@@ -1,10 +1,13 @@
-const express = require('express')
-const app = express()
+//Dependencies
+const express = require('express');
 
-const port = 3001
+//Const -> Server
+const server = express();
+const port = 3001;
+const nodeEnv = 'Development';
 
-app.get("/api", (req,res) => {
-    res.json({"data": ["User_1","User_2","User_3"] })
-})
+server.listen(port, () =>{ 
+    console.warn(`Server is running in ${port} in ${nodeEnv} mode`);
+});
 
-app.listen(port, () =>{ console.log("Server started on port",port) })
+module.exports = server;
