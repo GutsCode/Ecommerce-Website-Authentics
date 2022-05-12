@@ -1,23 +1,9 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
+import { HomePage } from './pages/HomePage';
 
 function App() {
-
-  const [backEndData, setBackEndData] = useState([{}])
-
-  useEffect(() =>{ 
-    fetch("/api").then(
-      response => response.json()
-    ).then(
-      data => {
-        setBackEndData(data)
-      }
-    )
-  }, [])
-
   return (
-    <div>
-
-    </div>
+    <HomePage/>
   );
 }
 

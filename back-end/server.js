@@ -10,8 +10,6 @@ server.listen(port, () =>{
     console.log(`Server is running in ${port} in ${nodeEnv} mode`);
 });
 
-server.get('/database', (res,req) =>{
-});
 
 
 module.exports = server;

@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.wapper{
+    background: #04111d;
+    width: 100vw;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+	display: flex;
+}
+
+.logoContainer{
+	display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logoText{
+    margin-left: 0.8rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.searchBar{
+display: flex;
+flex: 1 1 0%;
+}
+ 
