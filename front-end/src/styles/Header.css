@@ -1,34 +1,59 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .wapper{
-    background: #04111d;
-    width: 100vw;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-	display: flex;
+    @apply fixed flex w-full bg-[#ffffff] px-[1.2rem] py-[0.8rem] items-center drop-shadow-md;
 }
 
 .logoContainer{
-	display: flex;
-    align-items: center;
-    cursor: pointer;
+    @apply cursor-pointer;
 }
 
 .logoText{
-    margin-left: 0.8rem;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
+    @apply ml-[0.8rem] text-black mx-3 font-semibold text-2xl hover:text-blue-500;
 }
 
 .searchBar{
-display: flex;
-flex: 1 1 0%;
+    @apply bg-[#f4f3f18e] flex flex-1 mx-[0.8rem] w-0 items-center rounded-[0.3rem] border-[#5f5f5f] border  hover:border-transparent;
 }
- 
+
+.searchBarIcon{
+    @apply p-2.5 text-[#8a939b] font-bold text-lg;
+}
+
+.searchBarinput{
+    @apply mx-[0.2rem] h-full w-full border-0 bg-transparent outline-0 ring-0 px-2 pl-0 text-[#5f5f5f] placeholder:text-[#5f5f5f] hover:border-transparent;
+}
+
+.navContainer{
+    @apply flex items-center justify-end;
+}
+
+.navItem{
+    @apply text-black px-4 font-semibold text-lg cursor-pointer;
+
+}
+.navConnect{
+    @apply text-white px-2 py-2 font-semibold text-lg cursor-pointer bg-blue-500 rounded-[0.3rem];
+}
+
+.navDropdown{
+    @apply relative inline-block z-10 text-white px-2 py-2 font-semibold text-lg cursor-pointer bg-blue-500 rounded-[0.3rem] ;
+}
+
+.navDropdown__Hover{
+    @apply inline-block cursor-pointer border-none ;
+}
+
+.navDropdown__menu{
+    @apply absolute hidden top-full right-0 min-w-[95px] bg-white rounded-[0.2rem];
+}
+
+.navDropdown:hover .navDropdown__menu{
+    @apply block text-black
+}
+
+.contentDropdown{
+    @apply hover:bg-gray-200 p-2.5 
+}
