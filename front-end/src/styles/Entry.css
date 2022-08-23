@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.backgroundLogin{
+    @apply flex items-center min-h-screen p-4 bg-gray-200 lg:justify-center;
+}
+
+.containerLogin{
+    @apply flex flex-col overflow-hidden bg-white rounded-md shadow-lg 
+    
+}
+
+.leftContainerLogin{
+    @apply p-4 py-6 text-white bg-blue-500 
+}
+
+.leftLogoText{
+    @apply my-3 text-4xl font-bold tracking-wider text-center
+}
+
+.leftContent{
+    @apply mt-6 font-normal text-center text-gray-300 
+}
+
+.signUp{
+    @apply flex flex-col items-center justify-center mt-10 text-center 
+}
+
+.termsAndConditions{
+    @apply mt-6 text-sm text-center text-gray-300
+}
+
+.rightContainerLogin{
+    @apply p-20 bg-white 
+}
+
+.rightContainerRegister{
+    @apply p-10 bg-white 
+}
+
+.rightText-1{
+    @apply text-2xl font-semibold text-gray-700 mb-10
+}
+
+.rightFrom{
+    @apply flex flex-col space-y-5
+}
+
+.containerInput{
+    @apply flex flex-col space-y-1
+}
+
+.inputOverALL{
+    @apply px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-400
+}
+
+
+.buttonContinuar{
+    @apply w-full px-4 py-2 text-lg font-semibold text-white transition-colors duration-300 rounded-md shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-blue-200 focus:ring-4
+}
+
